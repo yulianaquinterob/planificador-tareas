@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>
+            Crear tarea 
+        </h2>
+        <form >
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo">
+            <label for="description">Descripción</label>
+            <textarea name="description" id="description"></textarea>
+            <label for="person">Persona encargada</label>
+            <input type="text" id="person">
+            <label for="date">Fecha de entrega</label>
+            <input type="date" id="date" placeholder="mm / dd /aa">
+            <label for="state">Estado</label>
+            <select name="state" id="state" >
+                <option value="">Por hacer</option>
+                <option value="">En proceso</option>
+                <option value="">Completada</option>
+            </select>
+            <button type="submit">Agregar</button>
+            
+
+        </form>
+
+    </div>
+    
+    
+</body>
+</html>
