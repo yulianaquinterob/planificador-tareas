@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.text-center {
+    color: rgb(58, 21, 47);
+    font-size: 2rem;
+
+}
+
+.tasks-dashboard {
+    margin-top: 1rem;
+}
+
+.task-column {
+    background-color: #f1f5f9;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.task-card {
+    background-color: #ffffff;
+    border-left: 4px solid #6a11cb;
+}
+
+.card-title {
+    color: #333;
+}
+.task-card {
+    background-color: #ffffff;
+    border-left: 4px solid #6a11cb;
+    cursor: grab; /* Cambia el cursor a la manito*/
+}
+
+.task-card:active {
+    cursor: grabbing;
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 0.85rem;
+    min-height: 1.2rem;
+    margin-top: 4px;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"],
+select[aria-invalid="true"] {
+    border-color: #dc2626;
+}
