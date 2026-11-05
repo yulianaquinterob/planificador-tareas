@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --neon-pink: #f72585;
+  --indigo-bloom: #7209b7;
+  --vivid-royal: #3a0ca3;
+  --electric-sapphire: #4361ee;
+  --sky-aqua: #4cc9f0;
+  --app-bg: #f7f8ff;
+  --linear-gradient: linear-gradient(120deg,rgba(247, 37, 133, 1) 10%, rgba(114, 9, 183, 1) 50%);
+  
+}
+
+
+body {
+    background: var(--app-bg);
+}
+
+.mb-1{
+    color: var(--vivid-royal);
+}
+#btn-open-modal  {
+    background: var(--linear-gradient) !important ;
+    border-color: var(--linear-gradient);
+    
+}
+
+#btn-open-modal:hover {
+    transform: translateY(-0.1rem);
+
+}
+
+#calendar-drawer{
+    color: var(--indigo-bloom) !important;
+    border-color: var(--indigo-bloom);
+
+}
+#calendar-drawer:hover{
+    transform: translateY(-0.1rem);
+
+}
+
+
+.offcanvas-header{
+    background-color: var(--indigo-bloom) !important;
+}
+
+.offcanvas-title{
+    color: var(--app-bg) !important;
+}
+.calendar-offcanvas {
+    width: 50vw;
+    max-width: 100%;
+}
+
+.calendar-frame {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    border: 0;
+}
+
+@media (max-width: 767.98px) {
+    .calendar-offcanvas {
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh;
+    }
+}
+
+.task-column {
+    background-color: #f1f5f9;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+#column-to-do{
+    background-image: url('/static/img/to-do.png');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat; 
+
+}
+
+#column-process{
+    background-image: url('/static/img/process.png');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat; 
+
+}
+#column-revision{
+    background-image: url('/static/img/revision.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat; 
+
+}
+#column-hecho{
+    background-image: url('/img/to-do.png');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat; 
+
+}
+.tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+.badge{
+    background-color: #bebcbc !important;
+}
+
+
+.card-title {
+    color: #333;
+}
+
+.task-card {
+    background-color: #ffffff;
+    border-left: 4px solid var(--sky-aqua);
+    cursor: grab; /* Cambia el cursor a la manito*/
+}
+
+.task-card:active {
+    cursor: grabbing;
+}
+.modal-header{
+    background-color: var(--indigo-bloom) !important;
+}
+.modal-title{
+    color: var(--app-bg);
+}
+
+.btn-close{
+    background-color: var(--electric-sapphire);
+    
+}
+
+.btn-secondary{
+    color: var(--indigo-bloom);
+    background-color: transparent;
+    border-color: transparent;
+}
+.btn-secondary:hover{
+    color: var(--indigo-bloom);
+    background-color: transparent;
+    border-color: var(--indigo-bloom);
+}
+
+.btn-primary{
+    background-color: var(--neon-pink) !important;
+    border-color: var(--neon-pink) !important;
+}
+
+.btn-primary:hover{
+    background-color: var(--indigo-bloom) !important;
+    border-color: var(--indigo-bloom) !important;
+}
+
+.btn-danger{
+   background-color: var(--vivid-royal) !important;
+   border-color: var(--vivid-royal) !important;
+}
+
+.btn-danger:hover{
+    background-color: var(--electric-sapphire) !important;
+    border-color: var(--electric-sapphire) !important;
+}
+
+
+.error-message {
+    color: #dc2626;
+    font-size: 0.85rem;
+    min-height: 1.2rem;
+    margin-top: 4px;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"],
+select[aria-invalid="true"] {
+    border-color: #dc2626;
+}
