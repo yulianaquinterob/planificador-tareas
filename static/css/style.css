@@ -49,23 +49,16 @@ body {
     color: var(--app-bg) !important;
 }
 .calendar-offcanvas {
-    width: 50vw;
-    max-width: 100%;
+    width: 50vw !important;
+    max-width: 100% !important;
 }
+
 
 .calendar-frame {
     width: 100%;
     flex: 1;
     min-height: 0;
     border: 0;
-}
-
-@media (max-width: 767.98px) {
-    .calendar-offcanvas {
-        width: 100vw;
-        height: 100vh;
-        height: 100dvh;
-    }
 }
 
 .task-column {
@@ -78,7 +71,7 @@ body {
 #column-to-do{
     background-image: url('/static/img/to-do.png');
     background-position: center;
-    background-size: 80%;
+    background-size: 70%;
     background-repeat: no-repeat; 
 
 }
@@ -86,21 +79,21 @@ body {
 #column-process{
     background-image: url('/static/img/process.png');
     background-position: center;
-    background-size: 80%;
+    background-size: 70%;
     background-repeat: no-repeat; 
 
 }
 #column-revision{
     background-image: url('/static/img/revision.png');
     background-position: center;
-    background-size: 70%;
+    background-size: 60%;
     background-repeat: no-repeat; 
 
 }
-#column-hecho{
-    background-image: url('/img/to-do.png');
+#column-done{
+    background-image: url('/static/img/hecho.png');
     background-position: center;
-    background-size: 80%;
+    background-size: 60%;
     background-repeat: no-repeat; 
 
 }
@@ -183,4 +176,12 @@ input[aria-invalid="true"],
 textarea[aria-invalid="true"],
 select[aria-invalid="true"] {
     border-color: #dc2626;
+}
+
+@media (max-width: 767.98px) {
+    .calendar-offcanvas {
+        width: 100vw !important;
+        height: 100vh !important;
+        height: 100dvh !important;
+    }
 }
