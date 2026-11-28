@@ -9,9 +9,9 @@ Flujo es la interfaz web de un planificador visual para organizar tareas y event
 - Calendario mensual para consultar, crear, editar, eliminar y mover eventos.
 - Formularios de inicio de sesión y registro como interfaz visual.
 
-## el proyecto aun se encuentra en desarrollo el backend esta alojado en otro repositorio 
 ## Estructura del proyecto
 
+```text
 .
 ├── index.html
 ├── planner.html
@@ -40,8 +40,9 @@ Flujo es la interfaz web de un planificador visual para organizar tareas y event
 │       └── taskmanager.js
 └── .vscode/
     └── settings.json
+```
 
-## Páginas
+### Páginas
 
 - **`index.html`**: pantalla de bienvenida con formularios para iniciar sesión o crear una cuenta. Incluye un enlace para abrir el planner de prueba.
 - **`planner.html`**: tablero Kanban, formulario de tareas y panel lateral que muestra el calendario.
